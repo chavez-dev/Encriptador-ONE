@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F3F5FC;
+    font-family: "Inter", sans-serif;
+}
+
+/* Estilos para las principales cajas */
+
+.caja__principal{
+    display: flex;
+    margin: 30px;
+}
+
+.seccion__prompt{
+    width: 65%;
+}
+
+
+
+/* Estilos para la seccion del prompt */
+
+.caja__prompt{
+    color: #0A3871;
+    height: 90vh;
+}
+
+#prompt{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    
+}
+
+#prompt::placeholder{
+    color: #0A3871;
+}
+
+.caja__botones{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.botones{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 18px;
+}
+
+.botones:first-child{
+    background-color: #0A3871;
+    color: #fff;
+}
+
+.botones:last-child{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+
+
+
+
+/* Estilos para la seccion de resultados */
+
+.caja__resultados{
+    background-color: #fff;
+    border-radius: 32px;
+    height: 90vh;
+}
