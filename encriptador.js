@@ -50,7 +50,23 @@ function desencriptar(){
     mostrarResultado(textoDesencriptado);
 }
 
+function copiarTexto(){
+    const textoACopiar = document.querySelector('.texto__respuesta');
 
+    // Seleccionar el texto dentro del elemento
+    var seleccion = window.getSelection();
+    var rango = document.createRange();
+    rango.selectNodeContents(textoACopiar);
+    seleccion.removeAllRanges();
+    seleccion.addRange(rango);
+
+    // Copiar el texto seleccionado al portapapeles
+    document.execCommand("copy");
+
+    // Limpiamos  la selección
+    seleccion.removeAllRanges();
+
+}
 
 function mostrarResultado(resultado){
     const cajaSinResultados = document.querySelector('.caja__sin__resultados');
