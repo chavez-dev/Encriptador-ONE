@@ -24,6 +24,32 @@ function encriptar(){
     mostrarResultado(textoEncriptado);
 }
 
+function desencriptar(){
+    const prompt = document.querySelector('#prompt');
+
+    let textoDesencriptado = prompt.value;
+
+    for (let i = 0; i < textoDesencriptado.length; i++) {
+        if(textoDesencriptado.includes('ai')){
+            textoDesencriptado = textoDesencriptado.replace('ai', 'a');
+        }
+        if(textoDesencriptado.includes('enter')){
+            textoDesencriptado = textoDesencriptado.replace('enter', 'e');
+        }
+        if(textoDesencriptado.includes('imes')){
+            textoDesencriptado = textoDesencriptado.replace('imes', 'i');
+        } 
+        if(textoDesencriptado.includes('ober')){
+            textoDesencriptado = textoDesencriptado.replace('ober', 'o');
+        }
+        if(textoDesencriptado.includes('ufat')){
+            textoDesencriptado = textoDesencriptado.replace('ufat', 'u');
+        }
+    }
+
+    mostrarResultado(textoDesencriptado);
+}
+
 
 
 function mostrarResultado(resultado){
