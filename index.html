@@ -26,8 +26,8 @@
                     Solo letras minusculas y sin acentos
                 </p>
                 <div class="caja__botones">
-                    <button class="botones">Encriptar</button>
-                    <button class="botones">Desencriptar</button>
+                    <button class="botones" onclick="encriptar()">Encriptar</button>
+                    <button class="botones" onclick="desencriptar()">Desencriptar</button>
                 </div>
             </div>
         </section>
@@ -40,7 +40,13 @@
                     <p class="texto__resultados">Ingresa el texto que deseas encriptar o desencriptar</p>
                 </div>
             </div>
-            <!-- <button class="botones">Copiar</button> -->
+
+            <div class="caja__con__resultados ocultar">
+                <p class="texto__respuesta"></p>
+                <div class="caja__abajo__resultados">
+                    <button class="botones" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
         </section>
 
     </main>
