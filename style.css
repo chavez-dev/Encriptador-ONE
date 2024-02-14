@@ -15,45 +15,84 @@ body{
 
 .caja__principal{
     display: flex;
-    margin: 30px;
+    justify-content: center;
+    width: 90%;
+    margin: 5vh auto;
+    gap: 10px;
 }
 
 .seccion__prompt{
-    width: 65%;
+    flex: 3;
+    height: 90vh;
+    width: 100%;
+    background-color: #fff238;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-
+.seccion__resultados{
+    flex: 1;
+    height: 90vh;
+    width: 100%;
+    background-color: #07be20;
+    /* background-color: #fff; */
+    border-radius: 32px;
+}
 
 /* Estilos para la seccion del prompt */
 
 .caja__prompt{
+    width: 75%;
+    height: 70%;
+    margin: 0 auto;
+    background-color: red;
     color: #0A3871;
-    height: 90vh;
+
+    
 }
 
 #prompt{
+    width: 100%;
+    height: 100%;
     font-size: 32px;
-    font-weight: 400;
-    line-height: 48px;
-    color: #0A3871;
     background-color: #F3F5FC;
-    
+    color: #0A3871;
+    line-height: 48px;
+    resize: none;
 }
 
 #prompt::placeholder{
     color: #0A3871;
+    font-style: italic;
+}
+
+.caja__prompt p{
+    color: #495057;
+    font-size: 12px;
+}
+
+.caja__abajo{
+    width: 65%;
+    margin: 0 auto;
+    background-color: antiquewhite;
 }
 
 .caja__botones{
-    display: inline-block;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    margin: 10px 0;
 }
 
 .botones{
-    width: 328px;
+    width: 40%;
     height: 67px;
     border-radius: 24px;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .botones:first-child{
@@ -68,13 +107,37 @@ body{
 }
 
 
-
-
-
 /* Estilos para la seccion de resultados */
-
-.caja__resultados{
-    background-color: #fff;
-    border-radius: 32px;
+.caja__sin__resultados{
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+.caja__sin__resultados h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    text-align: center;
+}
+.caja__sin__resultados img{
+    width: 336px;
+    height: 304px;
+}
+
+.caja__sin__resultados .caja__texto{
+    width: 250px;
+}
+
+.caja__texto p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 18px;
+}
+
+
+
+

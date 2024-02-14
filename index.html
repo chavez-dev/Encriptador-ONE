@@ -4,42 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0324d3207d.js" crossorigin="anonymous"></script>
     <title>Encriptador</title>
 </head>
 <body>
     
     <main class="caja__principal">
+
         <section class="seccion__prompt">
             <header>
                 <img src="img/Logo.png" alt="logo de Alura">
             </header>
             
             <div class="caja__prompt">
-                <textarea name="" id="prompt" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-
-                <p>@ Solo letras minusculas y sin acentos</p>
-            
+                <textarea name="" id="prompt"  placeholder="Ingrese el texto aqui"></textarea>
+               
+            </div>
+            <div class="caja__abajo">
+                <p>
+                    <i class="fa-solid fa-circle-exclamation" style="color: #555758;"></i>
+                    Solo letras minusculas y sin acentos
+                </p>
+                
                 <div class="caja__botones">
                     <button class="botones">Encriptar</button>
                     <button class="botones">Desencriptar</button>
                 </div>
-
             </div>
 
-            
         </section>
 
         <section class="seccion__resultados">
-            <div class="caja__resultados">
+            <div class="caja__sin__resultados">
                 <img src="img/Muñeco.png" alt="muñeco buscando con lupa">
-                <h3>Ningun mensaje fue encontrado</h3>
-                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
-                <button class="botones">Copiar</button>
+                <div class="caja__texto">
+                    <h3>Ningun mensaje fue encontrado</h3>
+                    <p class="texto__resultados">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
             </div>
+            <!-- <button class="botones">Copiar</button> -->
         </section>
 
     </main>
 
+    <footer>
+
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
