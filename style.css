@@ -25,7 +25,7 @@ body{
     flex: 3;
     height: 90vh;
     width: 100%;
-    background-color: #fff238;
+    /* background-color: #fff238; */
     border-radius: 32px;
     display: flex;
     flex-direction: column;
@@ -36,18 +36,17 @@ body{
     flex: 1;
     height: 90vh;
     width: 100%;
-    background-color: #07be20;
-    /* background-color: #fff; */
+    background-color: #fff;
     border-radius: 32px;
 }
 
 /* Estilos para la seccion del prompt */
 
 .caja__prompt{
-    width: 75%;
+    width: 65%;
     height: 70%;
     margin: 0 auto;
-    background-color: red;
+    -color: red;
     color: #0A3871;
 
     
@@ -61,11 +60,17 @@ body{
     color: #0A3871;
     line-height: 48px;
     resize: none;
+    border: none;
 }
 
 #prompt::placeholder{
     color: #0A3871;
     font-style: italic;
+    border: none;
+}
+
+#prompt:focus{
+    outline: none;
 }
 
 .caja__prompt p{
@@ -74,16 +79,16 @@ body{
 }
 
 .caja__abajo{
-    width: 65%;
+    width: 67%;
     margin: 0 auto;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 .caja__botones{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: aqua;
+    /* background-color: aqua; */
     margin: 10px 0;
 }
 
