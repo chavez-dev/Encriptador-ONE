@@ -21,6 +21,12 @@ function encriptar(){
         }
     }
 
+    Swal.fire({
+        title: "Exito!",
+        text: "Texto encriptado correctamente",
+        icon: "success",
+    });
+
     mostrarResultado(textoEncriptado);
 }
 
@@ -48,6 +54,12 @@ function desencriptar(){
     }
 
     mostrarResultado(textoDesencriptado);
+
+    Swal.fire({
+        title: "Exito!",
+        text: "Texto desencriptado correctamente",
+        icon: "success",
+    });
 }
 
 function copiarTexto(){
@@ -66,7 +78,15 @@ function copiarTexto(){
     // Limpiamos  la selección
     seleccion.removeAllRanges();
 
-    
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "<i class='fa-regular fa-paste' style='color: #0A3871;'></i>  Texto Copiado",
+        showConfirmButton: false,
+        timer: 1300
+    });
+
+
 
 }
 
