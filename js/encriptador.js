@@ -66,6 +66,8 @@ function copiarTexto(){
     // Limpiamos  la selección
     seleccion.removeAllRanges();
 
+    
+
 }
 
 function mostrarResultado(resultado){
