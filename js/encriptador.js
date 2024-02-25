@@ -3,6 +3,19 @@ function encriptar(){
     const prompt = document.querySelector('#prompt');
     const tamanio = prompt.value.length;
 
+    // Expresión regular que busca mayúsculas o caracteres especiales
+    var regex = /[A-Z!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+
+    // Verificar si el texto contiene alguna mayúscula o caracter especial
+    if (regex.test(prompt.value)) {
+        Swal.fire({
+            title: "Error!",
+            text: "El texto no puede contener mayúsculas ni caracteres especiales.",
+            icon: "error",
+        });
+        return; // Detener la función si el texto no cumple con los requisitos
+    }
+
     let textoEncriptado = '';
 
     for (let i = 0; i < tamanio; i++) {
@@ -85,9 +98,6 @@ function copiarTexto(){
         showConfirmButton: false,
         timer: 1300
     });
-
-
-
 }
 
 function mostrarResultado(resultado){
