@@ -4,13 +4,13 @@ function encriptar(){
     const tamanio = prompt.value.length;
 
     // Expresión regular que busca mayúsculas o caracteres especiales
-    var regex = /[A-Z!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+    var regex = /[A-ZÁÉÍÓÚáéíóú!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 
     // Verificar si el texto contiene alguna mayúscula o caracter especial
     if (regex.test(prompt.value)) {
         Swal.fire({
             title: "Error!",
-            text: "El texto no puede contener mayúsculas ni caracteres especiales.",
+            text: "El texto no puede contener mayúsculas, caracteres especiales ni acentos.",
             icon: "error",
         });
         return; // Detener la función si el texto no cumple con los requisitos
