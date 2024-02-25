@@ -45,7 +45,6 @@ function encriptar(){
 
 function desencriptar(){
     const prompt = document.querySelector('#prompt');
-
     let textoDesencriptado = prompt.value;
 
     for (let i = 0; i < textoDesencriptado.length; i++) {
@@ -88,7 +87,7 @@ function copiarTexto(){
     // Copiar el texto seleccionado al portapapeles
     document.execCommand("copy");
 
-    // Limpiamos  la selección
+    // Limpiamos la selección
     seleccion.removeAllRanges();
 
     Swal.fire({
