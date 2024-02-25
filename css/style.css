@@ -15,7 +15,7 @@ body{
 
 /* Estilos para las principales cajas */
 
-.caja__principal{
+.main-box{
     display: flex;
     justify-content: center;
     width: 90%;
@@ -23,7 +23,7 @@ body{
     gap: 10px;
 }
 
-.seccion__prompt{
+.prompt-section{
     flex: 11;
     height: 90vh;
     width: 100%;
@@ -34,7 +34,7 @@ body{
     justify-content: space-between;
 }
 
-.seccion__resultados{
+.results-section{
     flex: 4;
     height: 90vh;
     width: 100%;
@@ -45,7 +45,7 @@ body{
 
 /* Estilos para la seccion del prompt */
 
-.caja__prompt{
+.prompt-box{
     width: 65%;
     height: 70%;
     margin: 0 auto;
@@ -72,7 +72,7 @@ body{
     outline: none;
 }
 
-.caja__prompt p{
+.prompt-box p{
     color: #495057;
     font-size: 12px;
 }
@@ -83,7 +83,7 @@ body{
     /* background-color: antiquewhite; */
 }
 
-.caja__botones{
+.button-box{
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -112,7 +112,7 @@ body{
 
 
 /* Estilos para la seccion de resultados */
-.caja__sin__resultados{
+.no-results-box{
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -121,18 +121,18 @@ body{
     text-align: center;
 }
 
-.caja__sin__resultados h3{
+.no-results-box h3{
     font-weight: 700;
     font-size: 24px;
     line-height: 28.8px;
     text-align: center;
 }
-.caja__sin__resultados img{
+.no-results-box img{
     width: 336px;
     height: 304px;
 }
 
-.caja__sin__resultados .caja__texto{
+.no-results-box .caja__texto{
     width: 250px;
 }
 
@@ -142,15 +142,14 @@ body{
     margin-top: 18px;
 }
 
-.caja__con__resultados{
+.results-box{
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-
-.caja__con__resultados p{
+.texto__respuesta{
     margin: 20px;
     font-size: 30px;
     line-height: 48px;
@@ -158,7 +157,7 @@ body{
     overflow: auto;
 }
 
-.caja__con__resultados button{
+.results-box button{
     width: 80%;
     margin-bottom: 10px;
 }
@@ -179,24 +178,24 @@ body{
 
 
 @media(max-width: 1024px) {
-    .caja__principal{
+    .main-box{
         display: block;
     }
 
-    .seccion__resultados{
+    .results-section{
         height: auto;
         margin-top: 35px;
     }
 
-    .caja__sin__resultados{
+    .no-results-box{
         height: 10rem;
     }
 
-    .caja__sin__resultados img{
+    .no-results-box img{
         display: none;
     }
 
-    .caja__sin__resultados .caja__texto{
+    .no-results-box .caja__texto{
         width: 80%;
     }
 
@@ -212,33 +211,33 @@ body{
         width: 100%;
     }
 
-    .caja__con__resultados{
+    .results-box{
         height: auto;
         padding: 20px  50px 0 50px ;
     }
 }
 
 @media(max-width: 400px){
-    .caja__principal{
+    .main-box{
         margin: 2vh auto;
     }
 
-    .seccion__prompt img{
+    .prompt-section img{
         width: 60px;
         height: 60px;
         object-fit: cover;
     }
 
-    .seccion__prompt header{
+    .prompt-section-header{
         margin-bottom: 15px;
     }
 
-    .caja__botones{
+    .button-box{
         display: block;
         text-align: center;
     }
 
-    .caja__botones button{
+    .button-box button{
         width: 95%;
         margin-bottom: 10px;
     }
@@ -247,18 +246,18 @@ body{
         width: 100%;
     }
 
-    .caja__con__resultados{
+    .results-box{
         width: auto;
         margin: 0;
         padding: 0 20px;
     }
 
-    .caja__con__resultados p{
+    .texto__respuesta{
         margin: 15px 0;
         padding: 0;
     }
 
-    .caja__prompt{
+    .prompt-box{
         width: 90%;
     }
 

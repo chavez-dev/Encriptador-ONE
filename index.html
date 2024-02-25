@@ -7,19 +7,19 @@
     <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    
     <title>Challenge Encriptador</title>
 </head>
 <body>
     
-    <main class="caja__principal">
+    <main class="main-box">
 
-        <section class="seccion__prompt">
-            <header>
+        <section class="prompt-section">
+
+            <header class="prompt-section-header">
                 <img src="img/Logo.png" alt="logo de Alura">
             </header>
             
-            <div class="caja__prompt">
+            <div class="prompt-box">
                 <textarea name="" id="prompt"  placeholder="Ingrese el texto aqui"></textarea>
             </div>
 
@@ -28,15 +28,17 @@
                     <i class="fa-solid fa-circle-exclamation" style="color: #555758;"></i>
                     Solo letras minusculas y sin acentos
                 </p>
-                <div class="caja__botones">
+                <div class="button-box">
                     <button class="botones" onclick="encriptar()">Encriptar</button>
                     <button class="botones" onclick="desencriptar()">Desencriptar</button>
                 </div>
             </div>
         </section>
 
-        <section class="seccion__resultados">
-            <div class="caja__sin__resultados">
+
+        <section class="results-section">
+
+            <div class="no-results-box">
                 <img src="img/Muñeco.png" alt="muñeco buscando con lupa">
                 <div class="caja__texto">
                     <h3>Ningun mensaje fue encontrado</h3>
@@ -44,21 +46,15 @@
                 </div>
             </div>
 
-            <div class="caja__con__resultados ocultar">
-                
+            <div class="results-box ocultar">
                     <p class="texto__respuesta"></p>
-                
                 <div class="caja__abajo__resultados">
-                    <button class="botones btn__copiar" onclick="copiarTexto()">Copiar</button>
+                    <button class="botones botones--copiar" onclick="copiarTexto()">Copiar</button>
                 </div>
             </div>
         </section>
 
     </main>
-
-    <footer>
-        
-    </footer>
 
     <!-- ICONOS -->
     <script src="https://kit.fontawesome.com/0324d3207d.js" crossorigin="anonymous"></script>

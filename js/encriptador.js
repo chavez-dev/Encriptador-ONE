@@ -101,10 +101,10 @@ function copiarTexto(){
 }
 
 function mostrarResultado(resultado){
-    const cajaSinResultados = document.querySelector('.caja__sin__resultados');
+    const cajaSinResultados = document.querySelector('.no-results-box');
     cajaSinResultados.classList.add('ocultar');
 
-    const cajaConResultados = document.querySelector('.caja__con__resultados');
+    const cajaConResultados = document.querySelector('.results-box');
     cajaConResultados.classList.remove('ocultar');
 
     var textoRespuesta = document.querySelector('.texto__respuesta');
