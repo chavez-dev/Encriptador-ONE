@@ -1,6 +1,9 @@
+const prompt = document.querySelector('#prompt');
+
+
 
 function encriptar(){
-    const prompt = document.querySelector('#prompt');
+    
     const tamanio = prompt.value.length;
 
     // Expresión regular que busca mayúsculas o caracteres especiales
@@ -44,7 +47,6 @@ function encriptar(){
 }
 
 function desencriptar(){
-    const prompt = document.querySelector('#prompt');
     let textoDesencriptado = prompt.value;
 
     for (let i = 0; i < textoDesencriptado.length; i++) {
@@ -76,6 +78,7 @@ function desencriptar(){
 
 function copiarTexto(){
     const textoACopiar = document.querySelector('.texto__respuesta');
+    const prompt = document.querySelector('#prompt');
 
     // Seleccionar el texto dentro del elemento
     var seleccion = window.getSelection();
@@ -97,6 +100,9 @@ function copiarTexto(){
         showConfirmButton: false,
         timer: 1300
     });
+
+    textoACopiar.textContent = "";
+    prompt.value= "";
 }
 
 function mostrarResultado(resultado){
