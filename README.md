@@ -1,7 +1,7 @@
  # <div align="center" style="color: #7Cbdbd">🔒 Encriptador ONE</div>
 ## 📃 Descripcion:
 El objetivo principal del desafío es crear un sistema de encriptación eficiente y seguro que pueda cifrar y descifrar mensajes de manera confiable
-La página debe tener campos parainserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
+La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre dos opciones.
 El resultado debe ser mostrado en la pantalla.
 
 ## 🚀 Despliegue:
